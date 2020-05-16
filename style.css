@@ -10,9 +10,9 @@ html {
 	font-size: 62.5%;
 	--color1: #1279a6;
 	--color2: #3c4f6e;
-	--color2: #55767b;
-	--color2: #031b28;
-	--color2: #a9cadb;
+	--color3: #55767b;
+	--color4: #031b28;
+	--color5: #a9cadb;
 }
 
 ul {
@@ -22,4 +22,11 @@ ul {
 a {
 	text-decoration: none;
 	color: black;
+}
+
+/* Hero Section */
+
+.hero {
+	min-height: 100vh;
+	/* background-color: var(--color4); */
 }
