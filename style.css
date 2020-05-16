@@ -1,0 +1,16 @@
+/* Global Styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	--color1: #1279a6;
+	--color2: #3c4f6e;
+	--color2: #55767b;
+	--color2: #031b28;
+	--color2: #a9cadb;
+}
