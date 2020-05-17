@@ -205,7 +205,6 @@ a {
 	margin-top: 8rem;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	/* border: 3px solid var(--color1); */
 	border: none;
 	transition: all 0.5s ease;
 	position: relative;
@@ -231,19 +230,19 @@ a {
 	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 	grid-template-columns: repeat(2, 1fr);
 	min-height: 100vh;
-    gap: 0.6rem;
-    overflow: hidden;
+	gap: 0.6rem;
+	overflow: hidden;
 }
 
 .about-image-gallery img {
 	height: 100%;
 	width: 100%;
-    object-fit: cover;
-    transition: all 0.3s ease-in-out;
+	object-fit: cover;
+	transition: all 0.3s ease-in-out;
 }
 
 .about-image-gallery img:hover {
-    transform: translateY(-0.6rem)
+	transform: translateY(-0.6rem);
 }
 
 .about-text {
@@ -252,9 +251,38 @@ a {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-    padding: 4rem 4rem;
+	padding: 4rem 4rem;
 }
 
 .about-text h2 {
 	padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 55%;
+	}
+
+	nav {
+		text-align: center;
+    }
+
+    .form-wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 50%;
+    }
+
+	nav {
+		text-align: center;
+		width: 100%;
+	}
+    
+    .form-wrapper {
+        width: 90%;
+    }
 }
