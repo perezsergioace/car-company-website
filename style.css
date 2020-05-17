@@ -16,7 +16,7 @@ html {
 	--color2-opacity: rgba(60, 79, 110, 0.8);
 	--color3: #55767b;
 	--color3-opacity: rgba(85, 118, 123, 0.8);
-	--color4-: #031b28;
+	--color4: #031b28;
 	--color4-opacity: rgba(3, 27, 40, 0.8);
 	--color5: #a9cadb;
 	--color5-opacity: rgba(169, 202, 219, 0.8);
@@ -106,6 +106,14 @@ a {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.hero h2 {
+	font-size: 8rem;
+}
+
+.hero h3 {
+	font-size: 3rem;
 }
 
 /* Locations Section */
@@ -208,4 +216,45 @@ a {
 	background-color: var(--color1);
 	color: var(--text-color-white);
 	transform: translate(0, -6px);
+}
+
+/* About Section */
+
+.about {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.about-image-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+	grid-template-columns: repeat(2, 1fr);
+	min-height: 100vh;
+    gap: 0.6rem;
+    overflow: hidden;
+}
+
+.about-image-gallery img {
+	height: 100%;
+	width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-image-gallery img:hover {
+    transform: translateY(-0.6rem)
+}
+
+.about-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    padding: 4rem 4rem;
+}
+
+.about-text h2 {
+	padding-bottom: 1rem;
 }
