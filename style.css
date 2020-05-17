@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+
 /* Global Styles */
 
 * {
@@ -13,6 +15,37 @@ html {
 	--color3: #55767b;
 	--color4: #031b28;
 	--color5: #a9cadb;
+	--text-color-white: white;
+}
+
+body {
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+h1 {
+	font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 4.8rem;
+}
+
+h3 {
+	font-size: 3rem;
+	font-weight: normal;
+}
+
+h4,
+h5 {
+	font-size: 2.8rem;
 }
 
 ul {
@@ -24,9 +57,48 @@ a {
 	color: black;
 }
 
+/* Nav Section */
+.main-head {
+	background-color: var(--color1);
+	color: var(--text-color-white);
+}
+
+nav {
+	min-height: 10vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+}
+
+ul {
+	display: flex;
+	flex: 1 1 60rem;
+	justify-content: space-around;
+	align-items: center;
+}
+
+a {
+	color: var(--text-color-white);
+}
+
+#logo {
+	flex: 2 1 40rem;
+}
+
 /* Hero Section */
 
 .hero {
-	min-height: 100vh;
-	/* background-color: var(--color4); */
+	min-height: 90vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), transparent), url(./images/car-img1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: var(--text-color-white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
