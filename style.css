@@ -227,7 +227,6 @@ a {
 
 .about-image-gallery {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 	grid-template-columns: repeat(2, 1fr);
 	min-height: 100vh;
 	gap: 0.6rem;
@@ -265,24 +264,24 @@ a {
 
 	nav {
 		text-align: center;
-    }
+	}
 
-    .form-wrapper {
-        width: 70%;
-    }
+	.form-wrapper {
+		width: 70%;
+	}
 }
 
 @media screen and (max-width: 600px) {
 	html {
 		font-size: 50%;
-    }
+	}
 
 	nav {
 		text-align: center;
 		width: 100%;
 	}
-    
-    .form-wrapper {
-        width: 90%;
-    }
+
+	.form-wrapper {
+		width: 90%;
+	}
 }
