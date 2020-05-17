@@ -102,3 +102,51 @@ a {
 	align-items: center;
 	text-align: center;
 }
+
+/* Locations Section */
+
+.locations {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.locations img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.locations-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0rem 4rem;
+}
+
+.locations-text h2 {
+	padding-bottom: 1rem;
+}
+
+.locations-text p {
+	padding-bottom: 2rem;
+}
+
+.locations-text button {
+	padding: 2rem 6rem;
+	border: none;
+	color: black;
+	font-size: 1.8rem;
+	cursor: pointer;
+	border: 3px solid var(--color1);
+	transition: all 0.5s ease;
+	position: relative;
+}
+
+.locations-text button:hover {
+	background-color: var(--color1);
+	color: var(--text-color-white);
+	transform: translate(0, -6px);
+}
