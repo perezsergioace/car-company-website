@@ -1,6 +1,6 @@
 # car-company-website
 
-## Colors Palette
+## Color Palette
 
 **Color 1** - #1279A6
 
